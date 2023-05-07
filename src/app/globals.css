@@ -1,27 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/*=========variables========*/
+
+:root{
+  --clr-primary-dark:#0F172A;
+  --clr-secondary-dark:#142D40;
+  --clr-tertiary-dark: #112F36;
+  --clr-quartary-dark: #191136;
+  --clr-text-primary:#E2E8F0;
+  --clr-text-secondary: #94A3B8;
+  --clr-text-blue:#2879E0;
+  --clr-text-green:#20EAF7;
+  --clr-bg-gradient :linear-gradient()
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/*========== global  style===========*/
+
+/*mobile*/
+
+h1 ,h2,h3,h4,h5,h6{
+font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+  line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 7.4rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2 {
+  font-size: 5.25rem;
+}
+
+h3 {
+  font-size: 3.7rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+h5 {
+  font-size: 1.875rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.31rem;
+  line-height: ;
+}
+
+body{
+  @apply bg-slate-900
+}
+
+.home_hero{
+  background-image: linear-gradient(to right,var(--clr-primary-dark),var(--clr-secondary-dark),#0F5262);
+  min-height: 100vh;
 }
