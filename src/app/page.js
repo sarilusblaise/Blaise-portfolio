@@ -56,9 +56,11 @@ export default function HomePage() {
 
 			{/* ===============about section=================*/}
 			<section className='home_about'>
-				<h5>About me</h5>
-				<div className='home_about-paragraph'>
-					<h6>about</h6>
+				<h4>
+					About <span>Me</span>
+				</h4>
+				<div className='home_about-description'>
+					<h5>about</h5>
 					<p>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
 						assumenda cupiditate pariatur rerum deserunt, iusto, maiores veniam
@@ -92,7 +94,7 @@ export default function HomePage() {
 					</p>
 				</div>
 				<div className='home_about-skills'>
-					<h6>tech stack skills</h6>
+					<h5>tech stack skills</h5>
 					<div className='home_skills-container'>
 						<div className='home_skills'>
 							<h6>frontend</h6>
@@ -116,11 +118,93 @@ export default function HomePage() {
 						</div>
 						<div className='home_skills'>
 							<h6>backend</h6>
-							<div></div>
+							<div>
+								<Skills>
+									<p>JavaScript</p>{' '}
+								</Skills>
+								<Skills>
+									<p> CSS</p>
+								</Skills>
+								<Skills>
+									<p>Tailwind CSS</p>{' '}
+								</Skills>
+								<Skills>
+									<p>HTML</p>
+								</Skills>
+								<Skills>
+									<p>React</p>
+								</Skills>
+							</div>
 						</div>
 						<div className='home_skills'>
 							<h6>Tools</h6>
-							<div></div>
+							<div>
+								<Skills>
+									<p>JavaScript</p>{' '}
+								</Skills>
+								<Skills>
+									<p> CSS</p>
+								</Skills>
+								<Skills>
+									<p>Tailwind CSS</p>{' '}
+								</Skills>
+								<Skills>
+									<p>HTML</p>
+								</Skills>
+								<Skills>
+									<p>React</p>
+								</Skills>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ===============about section=================*/}
+			<section className='home_projects'>
+				<h4>
+					<span>My</span> Projects
+				</h4>
+				<div className='projects'>
+					<Image
+						className='projects_image'
+						src='/mytaskmaster.png'
+						width={311}
+						height={284}
+						alt=''
+					></Image>
+					<div className='projects_description'>
+						<h5>taskMaster</h5>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+							saepe obcaecati voluptatem error vel rem deleniti harum
+							necessitatibus reprehenderit, dolore, eligendi commodi d
+						</p>
+					</div>
+					<div className='projects_source'>
+						<div>
+							<div>
+								<Image
+									src='/github_icon.svg'
+									alt='github icon'
+									width={64}
+									height={64}
+								></Image>
+							</div>
+
+							<p>code</p>
+						</div>
+						<div>
+							<div>
+								<Image
+									src='/web.svg'
+									alt='web icon'
+									width={64}
+									height={64}
+								></Image>
+							</div>
+
+							<p>demo</p>
 						</div>
 					</div>
 				</div>
