@@ -69,7 +69,7 @@ h6 {
 p{
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.31rem;
-  line-height: 30px;
+  line-height: 2rem;
 }
 
 body{
@@ -117,10 +117,14 @@ background: linear-gradient(88.76deg, #20EAF7 0.29%, #2879E0 105.61%, #112F36 27
 display: flex;
 flex-direction: column;
 gap: 3rem;
+justify-content: center;
+align-items: center;
 }
 .home_social-icon{
   display: flex;
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -230,5 +234,32 @@ align-items: center;
   border-radius: 1rem;
 }
 
+.footer{
+  background-color: var(--clr-secondary-dark);
+  padding:3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-contact{
+   background-color: var(--clr-text-green);
+   border: none;
+   color: #000000;
+   font-family: var(--ff-secondary);
+   font-size: 1.31rem;
+}
+
+.btn-contact:hover{
+background-color: rgba(32, 233, 247, 0.8);
+border: solid var(--clr-text-primary) 1px;
+}
+
+.footer p{
+  font-size: 1rem;
+  text-align: center;
+}
 
 
