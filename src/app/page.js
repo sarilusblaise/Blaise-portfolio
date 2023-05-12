@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Skills from './components/Skills';
+import { stackObject } from './components/Skills';
 export default function HomePage() {
 	return (
 		<main>
@@ -93,71 +94,7 @@ export default function HomePage() {
 						<span>read more</span>
 					</p>
 				</div>
-				<div className='home_about-skills'>
-					<h5>tech stack skills</h5>
-					<div className='home_skills-container'>
-						<div className='home_skills'>
-							<h6>frontend</h6>
-							<div>
-								<Skills>
-									<p>JavaScript</p>{' '}
-								</Skills>
-								<Skills>
-									<p> CSS</p>
-								</Skills>
-								<Skills>
-									<p>Tailwind CSS</p>{' '}
-								</Skills>
-								<Skills>
-									<p>HTML</p>
-								</Skills>
-								<Skills>
-									<p>React</p>
-								</Skills>
-							</div>
-						</div>
-						<div className='home_skills'>
-							<h6>backend</h6>
-							<div>
-								<Skills>
-									<p>JavaScript</p>{' '}
-								</Skills>
-								<Skills>
-									<p> CSS</p>
-								</Skills>
-								<Skills>
-									<p>Tailwind CSS</p>{' '}
-								</Skills>
-								<Skills>
-									<p>HTML</p>
-								</Skills>
-								<Skills>
-									<p>React</p>
-								</Skills>
-							</div>
-						</div>
-						<div className='home_skills'>
-							<h6>Tools</h6>
-							<div>
-								<Skills>
-									<p>JavaScript</p>{' '}
-								</Skills>
-								<Skills>
-									<p> CSS</p>
-								</Skills>
-								<Skills>
-									<p>Tailwind CSS</p>{' '}
-								</Skills>
-								<Skills>
-									<p>HTML</p>
-								</Skills>
-								<Skills>
-									<p>React</p>
-								</Skills>
-							</div>
-						</div>
-					</div>
-				</div>
+				<Skills stackObject={stackObject} />
 			</section>
 
 			{/* ===============about section=================*/}
