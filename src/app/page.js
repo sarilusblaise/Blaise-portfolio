@@ -10,6 +10,12 @@ export default function HomePage() {
 				<button type='button' className='btn-menu'>
 					menu <Image src='/arrow.svg' width={15} height={10} />
 				</button>
+				<div>
+					<Link href='/'>Home</Link>
+					<Link href='/about'>About</Link>
+					<Link href='/projects'>Projects</Link>
+					<Link href='/contact'>Contact</Link>
+				</div>
 				<div></div>
 			</nav>
 			{/* =====================hero section======================*/}
