@@ -1,27 +1,19 @@
 import Image from 'next/image';
 import HomeAbout from './components/HomeAbout';
+import Menu from './components/Menu';
 import Link from 'next/link';
 import ProjectsList from './components/ProjectsList';
 export default function HomePage() {
 	return (
 		<main>
 			{/*==================nav bar================*/}
-			<nav className='navbar'>
-				<button type='button' className='btn-menu'>
-					menu <Image src='/arrow.svg' width={15} height={10} />
-				</button>
-				<div>
-					<Link href='/'>Home</Link>
-					<Link href='/about'>About</Link>
-					<Link href='/projects'>Projects</Link>
-					<Link href='/contact'>Contact</Link>
-				</div>
-				<div></div>
-			</nav>
+			<Menu />
 			{/* =====================hero section======================*/}
 			<section className='home_hero'>
 				<div className='home_description'>
-					<h4>Sarilus blondy wadley</h4>
+					<h4>
+						Sarilus<span> Blondy Wadley</span>
+					</h4>
 					<Image
 						src='/pc-hero.svg'
 						alt='pc-hero'
