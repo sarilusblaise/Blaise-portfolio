@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HomeAbout from '@/app/components/HomeAbout';
 export default function AboutPage() {
-	return <div>About bio page</div>;
+	return <HomeAbout />;
 }

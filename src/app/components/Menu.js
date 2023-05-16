@@ -18,10 +18,6 @@ export default function Menu() {
 				menu <Image src='/arrow.svg' width={15} height={10} />
 			</button>
 			<div className={menuClass}>
-				<button className='btn-close'>
-					<Image src='/ic_outline-close.svg' width={32} height={32} />
-				</button>
-
 				<ul className='menu-list'>
 					<li className='menu-item'>
 						<Link href='/'>Home</Link>

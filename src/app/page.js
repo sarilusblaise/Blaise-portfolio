@@ -6,8 +6,6 @@ import ProjectsList from './components/ProjectsList';
 export default function HomePage() {
 	return (
 		<main>
-			{/*==================nav bar================*/}
-			<Menu />
 			{/* =====================hero section======================*/}
 			<section className='home_hero'>
 				<div className='home_description'>

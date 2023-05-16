@@ -8,6 +8,12 @@ export default function ProjectsList() {
 			<h4>
 				<span>My</span> Projects
 			</h4>
+			<p>
+				I have a passion for building robust, user-friendly applications that
+				solve real-world problems. Each project listed here represents a unique
+				challenge that I was able to tackle with my skills and expertise using a
+				various of technologies.
+			</p>
 			<div className='projects-container'>
 				{projectsData.map((project) => {
 					const { name, description, image, alt } = project;
