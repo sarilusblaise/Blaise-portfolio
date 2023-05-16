@@ -32,26 +32,37 @@ export default function ContactPage() {
 				</form>
 				<div className='contact_media'>
 					<div className='media'>
-						<a href=''>
-							<Image
-								src='/material-symbols_mail-outline.svg'
-								alt='email icon'
-								width={64}
-								height={64}
-							/>
-						</a>
+						<div>
+							<a href=''>
+								<Image
+									src='/material-symbols_mail-outline.svg'
+									alt='email icon'
+									width={64}
+									height={64}
+								/>
+							</a>
+							<p>Email</p>
+							<p>sarilusblondywadley@gmail.com</p>
+						</div>
+
+						<a href=''> send a message</a>
 					</div>
 					<div className='media'>
-						{' '}
-						<a href=''>
-							{' '}
-							<Image
-								src='/ic_outline-whatsapp.svg'
-								alt='whatsApp icon'
-								width={64}
-								height={64}
-							/>
-						</a>
+						<div>
+							<a href=''>
+								{' '}
+								<Image
+									src='/ic_outline-whatsapp.svg'
+									alt='whatsApp icon'
+									width={64}
+									height={64}
+								/>
+							</a>
+							<p>WhatsApp</p>
+							<p>(+509) 4657-8228</p>
+						</div>
+
+						<a href=''> send a message</a>
 					</div>
 				</div>
 			</div>
