@@ -1,38 +1,37 @@
-import styles from './about.module.css';
 import { projectsData } from './ProjectData';
 import React from 'react';
 import Image from 'next/image';
 
-export default function ProjectsList() {
+export default function HomeProjectsList() {
 	return (
-		<section className={styles.home_projects}>
+		<section className='home_projects'>
 			<h4>
 				<span>My</span> Projects
 			</h4>
-			<p className={styles.projects_intro}>
+			<p className='projects_intro'>
 				I have a passion for building robust, user-friendly applications that
 				solve real-world problems. Each project listed here represents a unique
 				challenge that I was able to tackle with my skills and expertise using a
 				various of technologies.
 			</p>
-			<div className={styles.projects_container}>
+			<div className='projects-container'>
 				{projectsData.map((project) => {
 					const { name, description, image, alt } = project;
 					return (
-						<div className={styles.projects}>
+						<div className='projects'>
 							<Image
-								className={styles.projects_image}
+								className='projects_image'
 								src={image}
 								width={500}
 								height={500}
 								alt={alt}
 							></Image>
-							<div className={styles.projects_info}>
-								<div className={styles.projects_description}>
+							<div className='projects_info'>
+								<div className='projects_description'>
 									<h5>{name}</h5>
 									<p>{description}</p>
 								</div>
-								<div className={styles.projects_source}>
+								<div className='projects_source'>
 									<div>
 										<div>
 											<Image

@@ -35,7 +35,7 @@ export const projectsData = [
 		name: 'Documentation',
 		description:
 			'This project is a simple documentation page. it is built with JS,HTML and CSS.It gives a good experience to the user with a sidebar and a light-dark mode.',
-		image: '/documentation.png',
+		image: '/documentation1.png',
 		alt: 'documentation page avatar',
 	},
 ];

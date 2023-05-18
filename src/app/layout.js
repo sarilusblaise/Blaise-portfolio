@@ -1,6 +1,5 @@
 import './globals.css';
 
-import Footer from './components/Footer';
 import Menu from './components/Menu';
 export const metadata = {
 	title: 'Sarilus Blaise Portfolio',
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
 				{/*==================nav bar================*/}
 				<Menu />
 				{children}
-				<Footer />
 			</body>
 		</html>
 	);
