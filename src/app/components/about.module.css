@@ -100,7 +100,7 @@
     margin-bottom: 2rem;
 }
 
-.projects-container {
+.projects_container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
@@ -157,7 +157,7 @@
   margin-bottom: 8rem;
 }
 
-.contact_option-message{
+.contact_option_message{
 display: flex;
 flex-direction: column;
 gap: 5rem;

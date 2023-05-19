@@ -2,7 +2,7 @@ import styles from './about.module.css';
 import React from 'react';
 import Skills from './Skills';
 import { stackObject } from './Skills';
-export default function HomeAbout() {
+export default function AboutBio() {
 	return (
 		<section className={styles.home_about}>
 			<h4>
@@ -38,7 +38,7 @@ export default function HomeAbout() {
 					unde quos nisi quam quod porro in pariatur. Commodi omnis molestias
 					cumque dolorem doloremque corrupti nostrum eos dicta reiciendis et
 					iusto necessitatibus error, minima, excepturi amet officiis voluptatum
-					at deleniti a. Vel, incidunt? <span>read more</span>
+					at deleniti a. Vel, incidunt?
 				</p>
 			</div>
 			<Skills stackObject={stackObject} />
