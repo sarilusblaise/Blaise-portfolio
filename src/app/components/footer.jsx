@@ -5,9 +5,9 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.footer_sitemap}>
-				<button className={(styles.btn, styles.btn_contact)}>contact me</button>
+				<button className={`btn ${styles.btn_contact}`}>contact me</button>
 
-				<div className={(styles.home_social_icon, styles.footer_social)}>
+				<div className={`${styles.home_social_icon} ${styles.footer_social}`}>
 					<a href=''>
 						<Image
 							src='/linkedin.svg'

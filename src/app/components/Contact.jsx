@@ -18,14 +18,25 @@ export default function Contact() {
 			</div>
 			<div className={styles.contact_option_message}>
 				<form action='' className='contact_form'>
-					<input type='text' name='name' className={styles.contact_input} />
-					<input type='email' name='email' className={styles.contact_input} />
+					<input
+						type='text'
+						name='name'
+						className={styles.contact_input}
+						placeholder='Name *'
+					/>
+					<input
+						type='email'
+						name='email'
+						className={styles.contact_input}
+						placeholder='Email *'
+					/>
 					<textarea
 						name='message'
 						id=''
 						cols='30'
 						rows='10'
 						className={styles.contact_input}
+						placeholder='Message *'
 					></textarea>
 					<button type='button' className={`${styles.contact_btn} btn`}>
 						send message
@@ -57,7 +68,7 @@ export default function Contact() {
 							/>
 
 							<p>WhatsApp</p>
-							<p>(+509) 4657-8228</p>
+							<p>(+509)4657-8228</p>
 						</div>
 
 						<a href=''> send a message</a>

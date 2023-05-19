@@ -1,7 +1,7 @@
 export const stackObject = {
 	frontend: {
 		name: 'frontend',
-		stacks: ['JavaScript', 'CSS', 'Tailwind CSS', 'HTML', 'React'],
+		stacks: ['JavaScript', 'CSS', 'Tailwind', 'HTML', 'React'],
 	},
 	backend: { name: 'backend', stacks: ['NodeJs', 'Express', 'Next', 'MySQL'] },
 	tools: { name: 'tools', stacks: ['Git', 'GitHub', 'Vite', 'Figma'] },
