@@ -10,7 +10,7 @@ export const projectsData = [
 	{
 		name: 'Tictactoe',
 		description:
-			'This is a simple tic-tac-toe game from the react documentation tutorial. I followed the tutorial to better understand the fundamentals of react.I add more features to it like timer for each player , restart for restart the game, redo and undo for undo and redo move.It is build with react, css and ESlint.',
+			' Tic Tac Toe game is built using React, ESLint, and CSS, which provide a powerful combination of front-end development tools. The game follows the classic rules of Tic Tac Toe, where two players take turns marking X and O on a 3x3 grid until one player wins or the game ends in a draw.',
 		image: '/mytictactoe.png',
 		alt: 'tictactoe app avatar',
 	},
@@ -18,7 +18,7 @@ export const projectsData = [
 	{
 		name: 'Contact',
 		description:
-			'This is a contact management application that allows users to easily store and organize their contacts. Users can register their contacts and add important information such as phone numbers, email addresses.This project come from the react-router tutorial which I have completed that allow me to enhance my skills in the react router library',
+			'This is a contact management application that allows users to easily store and organize their contacts.This project come from the react-router tutorial which I have completed that allow me to enhance my skills in the react router library',
 		image: '/contact.svg',
 		alt: 'contact app avatar',
 	},

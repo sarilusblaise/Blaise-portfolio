@@ -59,7 +59,9 @@ export default function HomePage() {
 								></Image>
 							</a>
 						</div>
-						<button className='btn'>see my works</button>
+						<button className='btn'>
+							<Link href='/about/projects'> see my works</Link>
+						</button>
 					</div>
 				</section>
 

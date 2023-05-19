@@ -315,7 +315,7 @@ align-items: center;
     display: block;
   }
     .home_projects,.home_about, .contact,.footer {
-      margin-left: 40%;
+      
     }
 
 
@@ -335,6 +335,11 @@ align-items: center;
 
 .home_about-description{
   margin-bottom: 6rem;
+}
+
+.home_about-description p span {
+  color:var(--clr-text-blue);
+  text-decoration: underline;
 }
 
 .home_skills-container{
@@ -373,12 +378,18 @@ align-items: center;
 @media screen and (min-width: 800px) {
 
   .home_about {
-    padding: 1rem;
-  }
+      padding: 4rem;
+    }
   .home_skills div{
     grid-template-columns: repeat(3, 1fr);
   }
 
+}
+
+@media screen and (min-width:1024px) {
+  .home_about {
+      padding: 8rem;
+    }
 }
 
 /* ==========  projects style  =================*/
@@ -395,8 +406,12 @@ align-items: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 4rem;
+  margin-bottom: 1rem;
 }
-
+.projects_link{
+  color: var(--clr-text-blue);
+  text-decoration: underline;
+}
 .projects{
   background-color: var(--clr-tertiary-dark);
   padding: 1rem;
@@ -436,7 +451,7 @@ align-items: center;
 
 
 
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .home_projects {
     padding: 5rem;
   }
@@ -446,10 +461,14 @@ align-items: center;
   .home_projects {
     padding: 4rem;
   }
+     .projects {
+       flex-direction: row;
+     }
 
-  .home_about{
-    padding: 4rem;
-  }
+         .projects_image {
+          width: 40%;
+          height: 80%;
+         }
 }
 
 @media screen and (min-width:1024px){
@@ -462,19 +481,16 @@ align-items: center;
    padding: 8rem;
  }
 
- .home_about {
-   padding: 8rem;
- }
+
 
  .projects_image{
-  
  }
    
  .projects_intro{
-  width: 50%;
+  width: 70%;
  }
 
-}*/
+}
 
 /* ==========  contact style  =================*/
 .contact{
@@ -590,12 +606,13 @@ text-decoration: underline;
 
 /* ==========  footer style  =================*/
 .footer{
-  padding:3rem 1rem;
+  padding:3rem 0;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-secondary-dark);
 }
 
 .footer_sitemap{
@@ -605,7 +622,7 @@ text-decoration: underline;
   gap:2rem;
   justify-content: center;
   align-items: center;
-  border-bottom: var(--clr-text-secondary) solid 1px;
+  border-bottom: hsla(215, 20%, 65%, 0.2) solid 1px;
   padding-bottom: 3rem;
 }
 

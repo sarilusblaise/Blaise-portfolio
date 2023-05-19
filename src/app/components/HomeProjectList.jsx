@@ -1,6 +1,7 @@
 import { projectsData } from './ProjectData';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HomeProjectsList() {
 	return (
@@ -15,7 +16,7 @@ export default function HomeProjectsList() {
 				various of technologies.
 			</p>
 			<div className='projects-container'>
-				{projectsData.map((project) => {
+				{projectsData.slice(0, 3).map((project) => {
 					const { name, description, image, alt } = project;
 					return (
 						<div className='projects'>
@@ -62,6 +63,9 @@ export default function HomeProjectsList() {
 					);
 				})}
 			</div>
+			<p className='projects_link'>
+				<Link href='/about/projects'>All projects</Link>
+			</p>
 		</section>
 	);
 }
