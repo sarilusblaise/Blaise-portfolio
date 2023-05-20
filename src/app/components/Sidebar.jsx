@@ -1,8 +1,18 @@
+'use client';
 import styles from './about.module.css';
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+
+const linkList = [
+	{ name: 'Home', href: '/' },
+	{ name: 'About', href: '/about/bio' },
+	{ name: 'Projects', href: '/about/projects' },
+	{ name: 'Contact', href: '/about/contact' },
+];
 export default function Sidebar() {
+	const pathname = usePathname();
 	return (
 		<nav className={styles.sidebar}>
 			<div className={styles.sidebar_bio}>
@@ -18,28 +28,19 @@ export default function Sidebar() {
 				</div>
 			</div>
 			<ul className={styles.sidebar_list}>
-				<li className={styles.sidebar_menu_item}>
-					<Link href='/'>
-						<p>Home</p>{' '}
-					</Link>
-				</li>
-				<li className={styles.sidebar_menu_item}>
-					<Link href='/about/bio'>
-						<p>About</p>
-					</Link>
-				</li>
-				<li className={styles.sidebar_menu_item}>
-					<Link href='/about/projects'>
-						{' '}
-						<p>Projects</p>
-					</Link>
-				</li>
-				<li className={styles.sidebar_menu_item}>
-					<Link href='/about/contact'>
-						{' '}
-						<p>Contact</p>
-					</Link>
-				</li>
+				{linkList.map((link) => {
+					const isActive = pathname === link.href;
+					return (
+						<li
+							key={link.name}
+							className={`${isActive ? styles.sidebar_active_link : ''}`}
+						>
+							<Link href={link.href}>
+								<p>{link.name}</p>{' '}
+							</Link>
+						</li>
+					);
+				})}
 			</ul>
 		</nav>
 	);

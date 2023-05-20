@@ -8,6 +8,7 @@
     height: 100vh;
     max-height: 100vh;
     display: none;
+    overflow-y: auto;
 }
 
 .sidebar_bio{
@@ -37,12 +38,13 @@ color: var(--clr-text-green);
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30%;
+  height: 50%;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   
 }
+
 
 .sidebar_list li{
   padding:0.5rem  1rem ;
@@ -52,17 +54,16 @@ color: var(--clr-text-green);
   font-size: 1.5rem;
   text-align: center;
 }
+.sidebar_active_link {
+  background-color: var(--clr-secondary-dark) !important;
+}
 
 .sidebar_list li p{
   font-size: 1.5rem;
 }
 
 .sidebar_list li:hover{
-  padding:0.5rem  1rem ;
   background-color: var(--clr-secondary-dark);
-  width: 80%;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
 }
 
 
@@ -85,11 +86,6 @@ color: var(--clr-text-green);
   padding-top: 3rem;
 }
 
-@media screen and (min-width: 768px){
-.home_about{
-  padding: 5rem;
-}
-}
 
 .home_about-description{
   margin-bottom: 6rem;
@@ -131,16 +127,7 @@ margin-bottom: 2rem;
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 800px) {
 
-  .home_about {
-    padding: 1rem;
-  }
-  .home_skills div{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-}
 
 
 
@@ -197,6 +184,12 @@ margin-bottom: 2rem;
     background-color: var(--clr-quartary-dark);
     padding: 1rem;
     border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .home_projects {
+    padding: 5rem;
+  }
 }
 
 @media screen and (min-width:1280px) {
@@ -323,26 +316,6 @@ text-decoration: underline;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .contact{
-    
-  }
-
-}
-
-@media screen and (min-width: 1280px) {
-.contact{
-  
-}
-}
-
-
-/*@media screen and (min-width: 1024px){
-.contact {
-    max-width: 50%;
-    
-  }
-}*/
 
 
 
@@ -387,7 +360,7 @@ text-decoration: underline;
   gap:2rem;
   justify-content: center;
   align-items: center;
-  border-bottom: var(--clr-text-secondary) solid 1px;
+  border-bottom: hsla(215, 20%, 65%, 0.2) solid 1px;
   padding-bottom: 3rem;
 }
 
@@ -412,7 +385,7 @@ border: solid var(--clr-text-primary) 1px;
   padding: 0 1rem;
 }
 
-/*===========footer responsive======*/
+/*=========== responsiveness ======*/
 @media screen and (min-width:800px) {
 
   .footer{
@@ -427,7 +400,6 @@ border: solid var(--clr-text-primary) 1px;
     }
 }
 
-/*===========global responsiveness ============*/
 @media screen and (min-width:1536px){
 .home_projects,
   .home_about,
@@ -445,3 +417,33 @@ border: solid var(--clr-text-primary) 1px;
       margin-left: 40%;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+  .home_about,
+  .contact,
+  .home_projects {
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .home_about,
+  .home_projects,
+  .contact {
+    padding: 1rem;
+  }
+
+  .home_skills div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/*@media screen and (min-width: 1280px){
+.sidebar_bio{
+  flex-direction: row;
+  gap: 1rem;
+}
+}*/
