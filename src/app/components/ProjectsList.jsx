@@ -17,7 +17,7 @@ export default function ProjectsList() {
 			</p>
 			<div className={styles.projects_container}>
 				{projectsData.map((project) => {
-					const { name, description, image, alt } = project;
+					const { name, description, image, alt, source, demo } = project;
 					return (
 						<div className={styles.projects}>
 							<Image
@@ -35,24 +35,28 @@ export default function ProjectsList() {
 								<div className={styles.projects_source}>
 									<div>
 										<div>
-											<Image
-												src='/github_icon.svg'
-												alt='github icon'
-												width={64}
-												height={64}
-											></Image>
+											<a href={source} target='_blank '>
+												<Image
+													src='/github_icon.svg'
+													alt='github icon'
+													width={64}
+													height={64}
+												/>
+											</a>
 										</div>
 
 										<p>code</p>
 									</div>
 									<div>
 										<div>
-											<Image
-												src='/web.svg'
-												alt='web icon'
-												width={64}
-												height={64}
-											></Image>
+											<a href={demo} target='_blank'>
+												<Image
+													src='/web.svg'
+													alt='web icon'
+													width={64}
+													height={64}
+												/>
+											</a>
 										</div>
 
 										<p>demo</p>
