@@ -1,13 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function HomeFooter() {
 	return (
 		<footer className='footer'>
 			<div className='footer_sitemap'>
-				<button className='btn btn-contact'>contact me</button>
+				<button className='btn btn-contact'>
+					<Link href='/about/contact'>contact me</Link>{' '}
+				</button>
 
 				<div className='home_social-icon footer_social'>
-					<a href=''>
+					<a href='https://www.linkedin.com/in/sarilusblaise/' target='_blank'>
 						<Image
 							src='/linkedin.svg'
 							alt='pc-hero'
@@ -15,7 +18,7 @@ export default function HomeFooter() {
 							height={32}
 						></Image>
 					</a>
-					<a href=''>
+					<a href='https://github.com/sarilusblaise' target='_blank'>
 						<Image
 							src='/github_icon.svg'
 							alt='pc-hero'
@@ -23,7 +26,7 @@ export default function HomeFooter() {
 							height={32}
 						></Image>
 					</a>
-					<a href=''>
+					<a href='https://twitter.com/sarilusblaise' target='_blank'>
 						<Image
 							src='/twitter_icon.svg'
 							alt='pc-hero'
@@ -31,7 +34,7 @@ export default function HomeFooter() {
 							height={32}
 						></Image>
 					</a>
-					<a href=''>
+					<a href='https://www.hackerrank.com/sarilusblaise' target='_blank'>
 						<Image
 							src='/hackerRank_icon.svg'
 							alt='pc-hero'

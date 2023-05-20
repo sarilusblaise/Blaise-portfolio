@@ -56,7 +56,10 @@ export default function Contact() {
 							<p>sarilusblondywadley@gmail.com</p>
 						</div>
 
-						<a href=''> send a message</a>
+						<a href='mailto:sarilusblondywadley@gmail.com' target='blank'>
+							{' '}
+							send a message
+						</a>
 					</div>
 					<div className={styles.media}>
 						<div>
@@ -71,7 +74,13 @@ export default function Contact() {
 							<p>(+509)4657-8228</p>
 						</div>
 
-						<a href=''> send a message</a>
+						<a
+							href='https://api.whatsapp.com/send?phone=50946578228'
+							target='_blank'
+						>
+							{' '}
+							send a message
+						</a>
 					</div>
 				</div>
 			</div>

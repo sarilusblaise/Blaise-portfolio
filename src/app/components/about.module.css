@@ -2,24 +2,77 @@
 /* ==========  sidebar style  =================*/
 .sidebar {
     background-color: hsla(206, 52%, 16%, 0.4);
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
     width: 35%;
     height: 100vh;
+    max-height: 100vh;
     display: none;
 }
+
+.sidebar_bio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  height: 30%;
+}
+.sidebar_avatar{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.sidebar_description{
+color: var(--clr-text-green);
+  border-bottom: hsla(215, 20%, 65%, 0.2) solid 1px;
+}
+
+.sidebar_description p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sidebar_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.sidebar_list li{
+  padding:0.5rem  1rem ;
+  background-color: transparent;
+  width: 80%;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sidebar_list li p{
+  font-size: 1.5rem;
+}
+
+.sidebar_list li:hover{
+  padding:0.5rem  1rem ;
+  background-color: var(--clr-secondary-dark);
+  width: 80%;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+
 
 @media screen and (min-width:800px) {
     .sidebar {
         display: block;
     }
 
-    .home_projects,
-    .home_about,
-    .contact,
-    .footer {
-        margin-left: 40%;
-    }
+    
 
 
 }
@@ -42,6 +95,9 @@
   margin-bottom: 6rem;
 }
 
+.home_about_description p {
+margin-bottom: 2rem;
+}
 .home_skills-container{
   display: flex;
   flex-direction: column;
@@ -298,6 +354,7 @@ text-decoration: underline;
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-secondary-dark);
 }
 
 .home_social {
@@ -357,8 +414,34 @@ border: solid var(--clr-text-primary) 1px;
 
 /*===========footer responsive======*/
 @media screen and (min-width:800px) {
-  .footer_sitemap{
-    flex-direction: row;
-    margin: 0 auto;
+
+  .footer{
+    background-color: transparent;
   }
+}
+
+@media screen and (min-width:900px) {
+  .footer_sitemap {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+}
+
+/*===========global responsiveness ============*/
+@media screen and (min-width:1536px){
+.home_projects,
+  .home_about,
+  .contact,
+  .footer {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width:800px){
+  .home_projects,
+    .home_about,
+    .contact,
+    .footer {
+      margin-left: 40%;
+    }
 }

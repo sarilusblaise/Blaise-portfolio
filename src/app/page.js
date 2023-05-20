@@ -26,7 +26,10 @@ export default function HomePage() {
 					<div className='home_social'>
 						<h5>full-stack developer</h5>
 						<div className='home_social-icon'>
-							<a href=''>
+							<a
+								href='https://www.linkedin.com/in/sarilusblaise/'
+								target='_blank'
+							>
 								<Image
 									src='/linkedin.svg'
 									alt='pc-hero'
@@ -34,7 +37,7 @@ export default function HomePage() {
 									height={32}
 								></Image>
 							</a>
-							<a href=''>
+							<a href='https://github.com/sarilusblaise' target='_blank'>
 								<Image
 									src='/github_icon.svg'
 									alt='pc-hero'
@@ -42,7 +45,7 @@ export default function HomePage() {
 									height={32}
 								></Image>
 							</a>
-							<a href=''>
+							<a href='https://twitter.com/sarilusblaise' target='_blank'>
 								<Image
 									src='/twitter_icon.svg'
 									alt='pc-hero'
@@ -50,7 +53,10 @@ export default function HomePage() {
 									height={32}
 								></Image>
 							</a>
-							<a href=''>
+							<a
+								href='https://www.hackerrank.com/sarilusblaise'
+								target='_blank'
+							>
 								<Image
 									src='/hackerRank_icon.svg'
 									alt='pc-hero'

@@ -11,34 +11,38 @@ export default function AboutBio() {
 			<div className={styles.home_about_description}>
 				<h5>about</h5>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id assumenda
-					cupiditate pariatur rerum deserunt, iusto, maiores veniam illum
-					asperiores nam iure laudantium. Nemo alias officia labore, distinctio
-					ullam aut beatae pariatur fugit porro. Omnis necessitatibus unde eius
-					reiciendis, eos ex, aut quidem mollitia aspernatur suscipit quaerat
-					nisi excepturi quasi. Officia, laudantium! Facilis laboriosam ratione
-					quisquam nulla, voluptatum possimus accusamus minus esse vero eum
-					velit praesentium ducimus. In molestiae magni quidem, eaque, debitis
-					illum natus sequi tempore, deserunt cum quo vitae iusto vel dicta
-					ipsum aliquam! Accusamus natus veniam cupiditate id esse, tempora
-					aspernatur eum nesciunt. Eum molestias doloribus quod, vel officia
-					magnam nobis qui quis fugiat ex, deleniti impedit harum officiis cum
-					aperiam inventore error itaque suscipit in consequuntur corrupti! At
-					itaque ipsa quos quod, quis veniam ut, voluptatibus debitis ducimus
-					impedit ea veritatis laudantium recusandae animi obcaecati,
-					consequuntur quia aut quas reiciendis earum magni illum fugiat. Sunt
-					iste placeat quae a provident, consequatur architecto facere
-					molestiae. Magnam aperiam excepturi praesentium in dolore eius,
-					aspernatur quis maxime cumque ut optio, repellendus ipsa quia eos
-					ipsum beatae repudiandae! Magni dolores, quasi nesciunt fugit, nulla
-					similique ad voluptatem ullam laboriosam quidem quo asperiores!
-					Similique aliquam odio sapiente perspiciatis esse! Vero velit
-					doloremque reiciendis sequi laboriosam saepe illo voluptatem alias
-					nobis assumenda eaque eos, et facilis suscipit quas commodi dolorem
-					unde quos nisi quam quod porro in pariatur. Commodi omnis molestias
-					cumque dolorem doloremque corrupti nostrum eos dicta reiciendis et
-					iusto necessitatibus error, minima, excepturi amet officiis voluptatum
-					at deleniti a. Vel, incidunt?
+					I am a full-stack web developer with strong knowledge in JavaScript,
+					React, NodeJS, Python, and MySQL. I finished my civil engineering
+					degree but since the fourth year of my studies, I have dedicated
+					myself to getting serious about programming after using Python a few
+					times to do homework. This is how my passion for programming started
+					to develop.
+				</p>
+				<p>
+					One of the main reasons I got into programming is that I love
+					constantly learning new things and the challenges that this field
+					requires every day. I feel like it gives me a reason to make every day
+					of my life meaningful and keeps me busy doing things I'm passionate
+					about.
+				</p>
+
+				<p>
+					My civil engineering background has given me a strong background in
+					mathematics, which has allowed me to learn more quickly data
+					structures and algorithms, which are fundamental and crucial skills in
+					computer science. I am also constantly solving coding challenges on
+					HackerRank that keep me active in my web development journey. I am a
+					volunteer logistics manager in an association in my community. I've
+					built a few small applications and contributed to others. I strive to
+					improve myself every day and work to become the best developer I can
+					be.
+				</p>
+
+				<p>
+					Although a large part of my life is dedicated to programming, I try to
+					balance it with other activities. In my spare time, I enjoy playing
+					chess, soccer, working out, and most importantly, spending quality
+					time with my loved ones.
 				</p>
 			</div>
 			<Skills stackObject={stackObject} />
