@@ -239,7 +239,7 @@ main{
   text-align: center;
 }
 
-.home_description h4 span{
+ h4 span{
 background: linear-gradient(88.76deg, #20EAF7 0.29%, #2879E0 105.61%, #112F36 277.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
