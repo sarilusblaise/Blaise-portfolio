@@ -19,7 +19,7 @@ export default function HomeProjectsList() {
 				{projectsData.slice(0, 3).map((project) => {
 					const { name, description, image, alt, source, demo } = project;
 					return (
-						<div className='projects'>
+						<div className='projects' key={name}>
 							<Image
 								className='projects_image'
 								src={image}

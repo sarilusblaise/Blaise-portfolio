@@ -15,7 +15,7 @@ function StackList({ stackArr }) {
 			<h6>{name}</h6>
 			<div>
 				{stacks.map((stack, index) => (
-					<div className='skills'>
+					<div className='skills' key={name}>
 						<p>{stack}</p>
 					</div>
 				))}
