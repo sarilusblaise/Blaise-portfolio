@@ -172,6 +172,7 @@ main{
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     z-index: 100;
+    
  }
 
  .show-menu{
@@ -188,6 +189,7 @@ main{
   gap: 3rem;
   align-items: flex-start;
   justify-content: center;
+  
  }
  .menu-item{
   font-family: var(--ff-secondary);
@@ -664,7 +666,7 @@ border: solid var(--clr-text-primary) 1px;
 
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: blue;
+  border-left-color:var(--clr-text-green);
   border-radius: 50%;
   width: 40px;
   height: 40px;
