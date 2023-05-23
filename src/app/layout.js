@@ -1,7 +1,6 @@
 import './globals.css';
 import { Suspense } from 'react';
 import LoadingPage from './loading';
-import Load from './load';
 import Menu from './components/Menu';
 export const metadata = {
 	title: 'Sarilus Blaise Portfolio',
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body>
 				{/*==================nav bar================*/}
-				<Suspense fallback={<Load />}>
+				<Suspense fallback={<LoadingPage />}>
 					<Menu />
 					{children}
 				</Suspense>

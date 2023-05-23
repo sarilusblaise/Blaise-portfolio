@@ -2,7 +2,6 @@ import { projectsData } from './ProjectData';
 import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Load from '../load';
 export default function HomeProjectsList() {
 	return (
 		<section className='home_projects'>
@@ -20,7 +19,6 @@ export default function HomeProjectsList() {
 					const { name, description, image, alt, source, demo } = project;
 					return (
 						<div className='projects' key={name}>
-							<Suspense fallback={<Load />}></Suspense>
 							<Image
 								className='projects_image'
 								src={image}
@@ -28,6 +26,7 @@ export default function HomeProjectsList() {
 								height={500}
 								alt={alt}
 							></Image>
+
 							<div className='projects_info'>
 								<div className='projects_description'>
 									<h5>{name}</h5>
