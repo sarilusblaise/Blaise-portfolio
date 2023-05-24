@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import HomeFooter from './components/HomeFooter';
 import HomeAbout from './components/HomeAbout';
-import Menu from './components/Menu';
 import Link from 'next/link';
 import HomeProjectsList from './components/HomeProjectList';
 export default function HomePage() {

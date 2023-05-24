@@ -429,6 +429,7 @@ align-items: center;
   width: 100%;
   height: 20rem;
   border-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 .projects_source {

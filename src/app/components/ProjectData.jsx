@@ -23,7 +23,7 @@ export const projectsData = [
 		name: 'Contact',
 		description:
 			'This is a contact management application that allows users to easily store and organize their contacts.This project come from the react-router tutorial which I have completed that allow me to enhance my skills in the react router library',
-		image: '/contact.svg',
+		image: '/contact2.png',
 		alt: 'contact app avatar',
 		source: 'https://github.com/sarilusblaise/contact-app',
 		demo: 'https://mycontact-app1.netlify.app/',
@@ -42,8 +42,8 @@ export const projectsData = [
 	{
 		name: 'Documentation',
 		description:
-			'This project is a simple documentation page. it is built with JS,HTML and CSS.It gives a good experience to the user with a sidebar and a light-dark mode.',
-		image: '/documentation1.png',
+			'This project is a simple documentation page. it is built with JS,HTML and CSS.As part of the responsive web design course on FreeCodeCamp, I successfully completed this project, providing an intuitive platform to explore and access documentation.',
+		image: '/documentation3.png',
 		alt: 'documentation page avatar',
 		source: 'https://github.com/sarilusblaise/documentation-page',
 		demo: 'https://sarilusblaise.github.io/documentation-page/',
