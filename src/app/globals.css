@@ -154,10 +154,6 @@ main{
   transition: var(--transition);
   z-index: 100;
 }
- .btn-menu:hover{
-  background-color: #0F5262;
- }
-
  .menu-container{
   background-color: var(--clr-primary-dark);
   left: 1rem;
@@ -205,7 +201,10 @@ main{
   transition: var(--transition);
  }
 
-
+ .menu-item:hover{
+  color: var(--clr-text-green);
+  transform: translateX(0.5rem);
+ }
 
  @media screen and (min-width:800px) {
   .menu-container{
