@@ -9,11 +9,9 @@ export default function Menu() {
 	const [showMenu, setShowMenu] = useState(false);
 	const menuRef = useRef(null);
 
-	const toggleMenu = () => {
-		setShowMenu(!showMenu);
-	};
-
 	const menuClass = showMenu ? ' menu-container show-menu ' : 'menu-container';
+	const menuIconClass = showMenu ? ' hideMenu-icon ' : '';
+
 	useEffect(() => {
 		const closeMenu = (e) => {
 			if (e.target.classList.contains('btn-menu')) {
@@ -39,7 +37,13 @@ export default function Menu() {
 	return (
 		<nav className='navbar'>
 			<button type='button' className='btn-menu'>
-				menu <Image src='/arrow.svg' width={15} height={10} />
+				menu{' '}
+				<Image
+					src='/arrow.svg'
+					className={menuIconClass}
+					width={15}
+					height={10}
+				/>
 			</button>
 			<div className={menuClass} ref={menuRef}>
 				<ul className='menu-list'>

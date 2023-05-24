@@ -183,6 +183,11 @@ main{
       border: white solid 1px;
  }
 
+ .hideMenu-icon{
+  transform: rotate(0.5turn);
+  transition: var(--transition);
+ }
+
  .menu-list{
   display: flex;
   flex-direction: column;
