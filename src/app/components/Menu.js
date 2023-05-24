@@ -14,7 +14,10 @@ export default function Menu() {
 
 	useEffect(() => {
 		const closeMenu = (e) => {
-			if (e.target.classList.contains('btn-menu')) {
+			if (
+				e.target.classList.contains('btn-menu') ||
+				e.target.classList.contains('menu-icon')
+			) {
 				if (menuRef.current.classList.contains('show-menu')) {
 					setShowMenu(false);
 				} else {
@@ -37,10 +40,10 @@ export default function Menu() {
 	return (
 		<nav className='navbar'>
 			<button type='button' className='btn-menu'>
-				menu{' '}
+				menu
 				<Image
 					src='/arrow.svg'
-					className={menuIconClass}
+					className={`menu-icon ${menuIconClass}`}
 					width={15}
 					height={10}
 				/>
