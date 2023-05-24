@@ -33,7 +33,7 @@ export const projectsData = [
 		name: 'Feed app',
 		description:
 			'This is a basic social feed app that let users  create, edit, and delete posts on their personal feed.This project comes from the redux essentials skills tutorial that allowed me to better understand the core of the redux library state management.',
-		image: '/taskmaster.png',
+		image: '/feed.png',
 		alt: 'feed app avatar',
 		source: 'https://github.com/sarilusblaise/basic-social-media-feed-app',
 		demo: '',

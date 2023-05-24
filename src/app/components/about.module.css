@@ -392,10 +392,11 @@ border: solid var(--clr-text-primary) 1px;
     }
 
      .home_about,
-  .home_projects,
-  .contact {
+  .home_projects,.contact {
     padding: 2rem;
   }
+
+
 
   .home_skills div {
     grid-template-columns: repeat(3, 1fr);
@@ -424,8 +425,8 @@ border: solid var(--clr-text-primary) 1px;
     height: 80%;
   }
 
-  .projects_info{
-    
+  .contact{
+    padding:2rem 8rem;
   }
 
 
