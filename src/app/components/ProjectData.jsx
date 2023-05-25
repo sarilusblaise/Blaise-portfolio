@@ -22,7 +22,7 @@ export const projectsData = [
 	{
 		name: 'Contact',
 		description:
-			'This is a contact management application that allows users to easily store and organize their contacts.This project come from the react-router tutorial which I have completed that allow me to enhance my skills in the react router library',
+			'This is a contact management application that allows users to easily store and organize their contacts.This project come from the react-router tutorial which I have completed that allowed me to enhance my skills in the react router library',
 		image: '/contact2.png',
 		alt: 'contact app avatar',
 		source: 'https://github.com/sarilusblaise/contact-app',
