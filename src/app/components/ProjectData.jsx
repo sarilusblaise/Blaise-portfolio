@@ -36,7 +36,7 @@ export const projectsData = [
 		image: '/feed.png',
 		alt: 'feed app avatar',
 		source: 'https://github.com/sarilusblaise/basic-social-media-feed-app',
-		demo: '',
+		demo: 'https://basic-feed-app.vercel.app/',
 	},
 
 	{
