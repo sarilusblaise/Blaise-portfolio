@@ -3,7 +3,10 @@ export const stackObject = {
 		name: 'frontend',
 		stacks: ['JavaScript', 'CSS', 'Tailwind', 'HTML', 'React'],
 	},
-	backend: { name: 'backend', stacks: ['NodeJs', 'Express', 'Next', 'MySQL'] },
+	backend: {
+		name: 'backend',
+		stacks: ['NodeJs', 'Express', 'Next', 'MySQL', 'MongoDB'],
+	},
 	tools: { name: 'tools', stacks: ['Git', 'GitHub', 'Vite', 'Figma'] },
 };
 
