@@ -1,7 +1,7 @@
 export const stackObject = {
 	frontend: {
 		name: 'frontend',
-		stacks: ['JavaScript', 'CSS', 'Tailwind', 'HTML', 'React'],
+		stacks: ['JavaScript', 'React', 'CSS', 'Tailwind', 'Sass', 'HTML'],
 	},
 	backend: {
 		name: 'backend',
@@ -10,7 +10,7 @@ export const stackObject = {
 	tools: { name: 'tools', stacks: ['Git', 'GitHub', 'Vite', 'Figma'] },
 };
 
-//for creating specific stack list
+//for creating specific stack lis
 function StackList({ stackArr }) {
 	const { name, stacks } = stackArr;
 	return (
